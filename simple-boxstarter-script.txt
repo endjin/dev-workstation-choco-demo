@@ -44,7 +44,7 @@ choco install --cacheLocation=$cachePath -y netfx-4.5.2-devpack
 choco install --cacheLocation=$cachePath -y dotnetfx --version 4.6.1.0 --side-by-side
 choco install --cacheLocation=$cachePath -y netfx-4.6-devpack
 choco install --cacheLocation=$cachePath -y netfx-4.6.1-devpack
-#choco install --cacheLocation=$cachePath -y windowsazurepowershell             # not compatible with Windows 10
+choco install --cacheLocation=$cachePath -y azurepowershell --version 5.7.0
 choco install --cacheLocation=$cachePath -y sqlserver-odbcdriver
 choco install --cacheLocation=$cachePath -y msoledbsql
 choco install --cacheLocation=$cachePath -y onedrive
@@ -64,9 +64,9 @@ choco install --cacheLocation=$cachePath -y postgresql9
 choco install --cacheLocation=$cachePath -y postman
 choco install --cacheLocation=$cachePath -y python3 --version 3.7.8
 choco install --cacheLocation=$cachePath -y sourcetree
-#choco install --cacheLocation=$cachePath -y spotify					# package conflicts with MS Store version
+#choco install --cacheLocation=$cachePath -y spotify					    # package conflicts with MS Store version
 choco install --cacheLocation=$cachePath -y sublimetext3
-choco install --cacheLocation=$cachePath -y tortoisegit                 # query whether transport error is spurious or permanent issue?
+choco install --cacheLocation=$cachePath -y tortoisegit
 choco install --cacheLocation=$cachePath -y visualstudio2017professional
 choco install --cacheLocation=$cachePath -y visualstudio2019professional
 choco install --cacheLocation=$cachePath -y dotcover --version 2020.1.4
@@ -74,8 +74,8 @@ choco install --cacheLocation=$cachePath -y dotmemory --version 2020.1.4
 choco install --cacheLocation=$cachePath -y dottrace --version 2020.1.4
 choco install --cacheLocation=$cachePath -y dotpeek --version 2020.1.4
 choco install --cacheLocation=$cachePath -y resharper --version 2020.1.4
-choco install --cacheLocation=$cachePath -y ncrunch-vs2017 --install-arguments="'/l*v c:\ncrunch-vs2017_msi_install.log'"
-choco install --cacheLocation=$cachePath -y ncrunch-vs2019 --install-arguments="'/l*v c:\ncrunch-vs2019_msi_install.log'"
+choco install --cacheLocation=$cachePath -y ncrunch-vs2017
+choco install --cacheLocation=$cachePath -y ncrunch-vs2019
 choco install --cacheLocation=$cachePath -y yarn
 
 #Install-WindowsUpdate -acceptEula
