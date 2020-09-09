@@ -7,5 +7,5 @@ Some examples of using Chocolatey to automate the configuration of developer wor
 The simple scenario can be tested on a fresh VM (with Internet access) using the following command from an elevated PowerShell console:
 
 ```
-. { iwr -useb https://raw.githubusercontent.com/endjin/dev-workstation-choco-demo/master/bootstrap.ps1 } | iex;
+. { iwr -useb https://raw.githubusercontent.com/endjin/dev-workstation-choco-demo/master/bootstrap.ps1 -Headers @{"Cache-Control"="no-cache"} } | iex;
 ```
