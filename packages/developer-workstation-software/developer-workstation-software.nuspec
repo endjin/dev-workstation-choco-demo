@@ -44,16 +44,16 @@
       <dependency id="beyondcompare" version="[4.3, 5.0)" />
       <dependency id="conemu" version="20.7.13.0" />
       <dependency id="docker-desktop" />
-      <!-- <dependency id="dbforge-postgre-studio" /> -->
+      <!-- <dependency id="dbforge-postgre-studio" /> NOTE: broken package -->
       <dependency id="git" version="2.28.0" />
       <dependency id="googlechrome" />
       <dependency id="googlechrome.canary" />
       <dependency id="iisexpress" version="[10.0,11.0)" />
       <dependency id="lightshot" version="[5.5,5.6)" />
-      <dependency id="dotnetcore-sdk" version="3.1.401" />
+      <dependency id="dotnetcore-sdk" version="2.1.808" />
       <dependency id="netfx-4.5.1-devpack" />
       <dependency id="netfx-4.5.2-devpack" />
-      <!-- <dependency id="dotnetfx" version="4.6.1.0" /> -->
+      <!-- <dependency id="dotnetfx" version="4.6.1.0" /> NOTE: requires side-by-side -->
       <dependency id="netfx-4.6-devpack" />
       <dependency id="netfx-4.6.1-devpack" />
       <dependency id="azurepowershell" version="6.9.0" />
@@ -75,7 +75,7 @@
       <dependency id="postman" />
       <dependency id="python3" version="3.7.8" />
       <dependency id="sourcetree" />
-      <!-- <dependency id="spotify" /> -->
+      <!-- <dependency id="spotify" /> NOTE: Conflicts with MS Store version -->
       <dependency id="sublimetext3" />
       <dependency id="tortoisegit" />
       <dependency id="visualstudio2017professional" />
