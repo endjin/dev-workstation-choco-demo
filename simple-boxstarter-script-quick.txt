@@ -1,0 +1,59 @@
+# General settings
+Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives `
+                           -EnableShowProtectedOSFiles `
+                           -EnableShowFileExtension
+
+# Workaround issue with TEMP path getting polluted due to Boxstarter issue: https://github.com/chocolatey/boxstarter/issues/241
+$cachePath = (Resolve-Path ([IO.Path]::Combine($env:USERPROFILE, 'AppData', 'Local', 'Temp', 'chocolatey'))).Path
+
+# Standard packages
+choco upgrade --cacheLocation=$cachePath -y 7zip
+choco upgrade --cacheLocation=$cachePath -y adobereader
+choco upgrade --cacheLocation=$cachePath -y microsoft-teams.install
+choco upgrade --cacheLocation=$cachePath -y notepadplusplus
+choco upgrade --cacheLocation=$cachePath -y paint.net
+choco upgrade --cacheLocation=$cachePath -y slack
+choco upgrade --cacheLocation=$cachePath -y windirstat
+choco upgrade --cacheLocation=$cachePath -y zoom
+
+# Developer packages
+choco upgrade --cacheLocation=$cachePath -y beyondcompare
+choco upgrade --cacheLocation=$cachePath -y conemu --version 20.7.13.0
+choco upgrade --cacheLocation=$cachePath -y docker-desktop
+choco upgrade --cacheLocation=$cachePath -y git --version 2.28.0
+choco upgrade --cacheLocation=$cachePath -y googlechrome
+choco upgrade --cacheLocation=$cachePath -y googlechrome.canary
+choco upgrade --cacheLocation=$cachePath -y lightshot
+choco upgrade --cacheLocation=$cachePath -y dotnetcore-sdk --version 2.1.808
+choco upgrade --cacheLocation=$cachePath -y dotnetcore-sdk --version 3.1.302 --side-by-side
+choco upgrade --cacheLocation=$cachePath -y netfx-4.5.1-devpack
+choco upgrade --cacheLocation=$cachePath -y netfx-4.5.2-devpack
+choco upgrade --cacheLocation=$cachePath -y dotnetfx --version 4.6.1.0 --side-by-side
+choco upgrade --cacheLocation=$cachePath -y netfx-4.6-devpack
+choco upgrade --cacheLocation=$cachePath -y netfx-4.6.1-devpack
+choco upgrade --cacheLocation=$cachePath -y azurepowershell --version 6.9.0
+choco upgrade --cacheLocation=$cachePath -y sqlserver-odbcdriver
+choco upgrade --cacheLocation=$cachePath -y msoledbsql
+choco upgrade --cacheLocation=$cachePath -y onedrive
+choco upgrade --cacheLocation=$cachePath -y sql2012.nativeclient
+choco upgrade --cacheLocation=$cachePath -y sqllocaldb
+choco upgrade --cacheLocation=$cachePath -y sql-server-management-studio
+choco upgrade --cacheLocation=$cachePath -y sql-server-management-studio --version 15.0.18333.0 --side-by-side
+choco upgrade --cacheLocation=$cachePath -y vscode
+choco upgrade --cacheLocation=$cachePath -y visualstudio-installer
+choco upgrade --cacheLocation=$cachePath -y firefox
+choco upgrade --cacheLocation=$cachePath -y nodejs
+choco upgrade --cacheLocation=$cachePath -y postman
+choco upgrade --cacheLocation=$cachePath -y python3 --version 3.7.8
+choco upgrade --cacheLocation=$cachePath -y sourcetree
+choco upgrade --cacheLocation=$cachePath -y sublimetext3
+choco upgrade --cacheLocation=$cachePath -y tortoisegit
+choco upgrade --cacheLocation=$cachePath -y visualstudio2017professional --package-parameters "--add Microsoft.VisualStudio.Workload.Azure;includeRecommended --passive --locale en-US"
+choco upgrade --cacheLocation=$cachePath -y dotcover --version 2020.1.4
+choco upgrade --cacheLocation=$cachePath -y dotmemory --version 2020.1.4
+choco upgrade --cacheLocation=$cachePath -y dottrace --version 2020.1.4
+choco upgrade --cacheLocation=$cachePath -y dotpeek --version 2020.1.4
+choco upgrade --cacheLocation=$cachePath -y resharper --version 2020.1.4
+choco upgrade --cacheLocation=$cachePath -y ncrunch-vs2017
+choco upgrade --cacheLocation=$cachePath -y ncrunch-vs2019
+choco upgrade --cacheLocation=$cachePath -y yarn
