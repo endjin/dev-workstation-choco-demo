@@ -39,30 +39,24 @@
       <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
       <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" /> -->
 
-      <dependency id="hardware-tools" version="0.1.0" />
-      <dependency id="common-software" version="0.1.0" />
+      <dependency id="common-workstation-software" version="0.1.0" />
 
       <dependency id="beyondcompare" version="[4.3, 5.0)" />
       <dependency id="conemu" version="20.7.13.0" />
-      <dependency id="docker-desktop" version="2.3.0.0" />
-      <dependency id="dbforge-postgre-studio" />
+      <dependency id="docker-desktop" />
+      <!-- <dependency id="dbforge-postgre-studio" /> -->
       <dependency id="git" version="2.28.0" />
       <dependency id="googlechrome" />
       <dependency id="googlechrome.canary" />
       <dependency id="iisexpress" version="[10.0,11.0)" />
-      <dependency id="dotcover" version="2020.1.4" />
-      <dependency id="dotmemory" version="2020.1.4" />
-      <dependency id="dottrace" version="2020.1.4" />
-      <dependency id="dotpeek" version="2020.1.4" />
-      <dependency id="resharper" version="2020.1.4" />
       <dependency id="lightshot" version="[5.5,5.6)" />
       <dependency id="dotnetcore-sdk" version="3.1.401" />
       <dependency id="netfx-4.5.1-devpack" />
       <dependency id="netfx-4.5.2-devpack" />
-      <dependency id="dotnetfx" version="4.6.1.0" />
+      <!-- <dependency id="dotnetfx" version="4.6.1.0" /> -->
       <dependency id="netfx-4.6-devpack" />
       <dependency id="netfx-4.6.1-devpack" />
-      <dependency id="windowsazurepowershell" />
+      <dependency id="azurepowershell" version="6.9.0" />
       <dependency id="sqlserver-odbcdriver" version="[17.0,18.0)" />
       <dependency id="msoledbsql" version="[18.0,19.0)" />
       <dependency id="onedrive" />
@@ -75,8 +69,6 @@
       <dependency id="vscode" />
       <dependency id="visualstudio-installer" />
       <dependency id="firefox" />
-      <dependency id="ncrunch-vs2017" />
-      <dependency id="ncrunch-vs2019" />
       <dependency id="nodejs" />
       <dependency id="pgadmin4" version="4.23" />
       <dependency id="postgresql9" />
@@ -88,6 +80,13 @@
       <dependency id="tortoisegit" />
       <dependency id="visualstudio2017professional" />
       <dependency id="visualstudio2019professional" />
+      <dependency id="dotcover" version="2020.1.4" />
+      <dependency id="dotmemory" version="2020.1.4" />
+      <dependency id="dottrace" version="2020.1.4" />
+      <dependency id="dotpeek" version="2020.1.4" />
+      <dependency id="resharper" version="2020.1.4" />
+      <dependency id="ncrunch-vs2017" />
+      <dependency id="ncrunch-vs2019" />
       <dependency id="yarn" /> 
 
       <dependency id="chocolatey-core.extension" version="1.1.0" />

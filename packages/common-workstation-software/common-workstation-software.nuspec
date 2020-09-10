@@ -67,7 +67,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
       <dependency id="notepadplusplus" version="[7,8)" />
       <dependency id="paint.net" version="[4,4.2)" />
       <dependency id="slack" version="[4,5)" />
-      <dependency id="teamviewer" version="15.8.3" />
+      <!-- <dependency id="teamviewer" version="15.8.3" /> -->
       <dependency id="windirstat" version="" />
       <dependency id="zoom" version="[5,6)" /> 
 
